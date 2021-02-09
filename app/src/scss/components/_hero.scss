@@ -1,0 +1,92 @@
+.hero{
+    width: 100%;
+    height: 570px;
+    padding: 10px;
+    &__container{
+        width: 100%;
+        max-width: 1200px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        .hero__texts{
+            width: 580px;
+            height: 525px;
+            .hero__texts-title{
+                font-size: 55px;
+                margin: 15px;
+                color: var(--DarkBlue);
+                line-height: 65px;
+            }
+
+            .hero__texts-description{
+                margin: 15px;
+                width: 60%;
+                color: var(--DarkGrayishBlue);
+            }
+
+            .btn{
+                margin: 15px;
+                width: 170px;
+                height: 45px;
+                border-radius: 35px;
+            }
+        }
+
+        .hero__img{
+            width: 580px;
+            height: 525px;
+            img{
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+}
+
+@media(max-width: 800px){
+    .hero{
+        width: 100%;
+        height: 700px;
+        padding: 0;
+        &__container{
+            display: flex;
+            flex-direction: column-reverse;
+            .hero__texts{
+                width: 100%;
+                height: 300px;
+                padding: 10px;
+                .hero__texts-title{
+                    margin: 10px;
+                    font-size: 35px;
+                    line-height: 40px;
+                    text-align: center;
+                }
+    
+                .hero__texts-description{
+                    width: 90%;
+                    margin: 10px auto;
+                    text-align: center;
+                }
+    
+                .btn{
+                    margin: 10px auto;
+                }
+            }
+    
+    
+            .hero__img{
+                width: 100%;
+                height: 380px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                img{
+                    width: 90%;
+                    height: 90%;
+                }
+            }
+        }
+    }
+}

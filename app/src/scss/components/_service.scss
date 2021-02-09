@@ -1,0 +1,34 @@
+.service{
+    width: 415px;
+    height: 170px;
+    padding: 10px;
+    display: flex;
+
+    .service__number{
+        width: 270px;
+        height: 40px;
+        border-radius: 20px;
+        background-color: var(--BrightRed);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: var(--White);
+        font-weight: 700;
+        font-size: 18px;
+        margin-right: 10px;
+    }
+
+    .service__container{
+        .service__container-title{
+            color: var(--DarkBlue);
+            font-size: 17px;
+            margin-bottom: 10px;
+        }
+
+        .service__container-texts{
+            color: var(--DarkGrayishBlue);
+            font-size: 15px;
+            text-align: justify;
+        }
+    }
+}

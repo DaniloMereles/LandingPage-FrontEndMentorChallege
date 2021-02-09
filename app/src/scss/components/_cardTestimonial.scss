@@ -1,0 +1,28 @@
+.cardTestimonial{
+    width: 400px;
+    height: 220px;
+    padding-top: 60px;
+    background-color: var(--VaryLightGray);
+    text-align: center;
+    position: relative;
+    border-radius: 10px;
+    .cardTestimonial__img{
+        position: absolute;
+        width: 120px;
+        top: -65px;
+        left: 140px;
+    }
+
+    .cardTestimonial__texts{
+        .cardTestimonial__texts-title{
+            color: var(--DarkBlue);
+            font-size: 13px;
+            margin: 10px;
+        }
+
+        .cardTestimonial__texts-description{
+            color: var(--DarkGrayishBlue);
+            margin: 10px;
+        }
+    }
+}

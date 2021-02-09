@@ -1,0 +1,19 @@
+.main{
+    width: 100%;
+    height: auto;
+    padding: 10px;
+    .main__container{
+        width: 100%;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+}
+
+@media(max-width: 800px){
+    .main{
+        width: 100%;
+        max-width: 600px;
+        height: auto;
+        margin: 0 auto;
+    }
+}

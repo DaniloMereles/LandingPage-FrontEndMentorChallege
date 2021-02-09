@@ -1,0 +1,61 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+}
+
+body{
+    font-size: 16px;
+    font-family: var(--BeVietnam);
+}
+
+body::before{
+    content: "";
+    z-index: -1;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: url(../img/bg-tablet-pattern.svg);
+    background-size: 50%;
+    background-repeat: no-repeat;
+    background-position: right -15vh top -10vh;
+    @media (max-width: 800px){
+        background-position: right -10vh top -1vh;
+        background-size: 100%;
+    }
+}
+
+.btn{
+    width: 190px;
+    height: 50px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    outline: none;
+    background-color: var(--BrightRed);
+    color: var(--VaryLightGray);
+    font-size: 17px;
+    letter-spacing: 1px;
+    font-weight: 700;
+    border-radius: 35px;
+    cursor: pointer;
+    &:hover{
+        opacity: .8;
+        color: var(--White);
+    }
+}
+
+.btn.white{
+    background-color: var(--White);
+    color: var(--BrightRed);
+}
+
+.mg-auto{
+    margin: 0 auto;
+}
